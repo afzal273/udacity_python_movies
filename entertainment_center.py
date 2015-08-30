@@ -1,7 +1,7 @@
-__author__ = 'asyed'
-
 import media
 import fresh_tomatoes
+
+__author__ = 'Afzal Syed'
 
 # Making movie objects from the media module
 
@@ -29,8 +29,9 @@ peabody_sherman = media.Movie(771169232,
                               "https://upload.wikimedia.org/wikipedia/en/thumb/5/58/Mr_Peabody_%26_Sherman_Poster.JPG/220px-Mr_Peabody_%26_Sherman_Poster.JPG",
                               "https://www.youtube.com/watch?v=hy6oD7BZw50")
 
+# Append each movie to the movies list
 movies = [paddington, mad_max_fury, inside_out,
           interstellar, big_hero_6, peabody_sherman]
 
+# Create and open the movies page
 fresh_tomatoes.open_movies_page(movies)
-

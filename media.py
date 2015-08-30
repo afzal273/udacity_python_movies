@@ -1,8 +1,8 @@
-__author__ = 'asyed'
-
 import webbrowser
 import urllib
 import json
+
+__author__ = 'Afzal Syed'
 
 with open('rt_api_key.txt', 'r') as f:
     api_key = f.read()
