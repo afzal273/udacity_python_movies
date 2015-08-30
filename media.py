@@ -16,7 +16,7 @@ class Movie():
            Rotten Tomatoes API has all details besides poster image and youtube url
            http://api.rottentomatoes.com/api/public/v1.0/movies/770672122.json?apikey=your_api_key
         """
-
+        # From the movie ID, get info about the movie
         contents = urllib.urlopen(
             "http://api.rottentomatoes.com/api/public/v1.0/movies/" + str(movie_id) + ".json?apikey=" + api_key)
         data = json.loads(contents.read())
